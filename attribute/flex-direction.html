@@ -4,34 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>align-content - flex-container | flex</title>
-	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<title>flex-direction - flex-container | flex</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<style>
 		.flex-container {
 			display: flex;
-			height: 100px;
-			flex-wrap: wrap;
 		}
 		.sample-1 .flex-container {
-			align-content: flex-start;
+			flex-direction: row;
 		}
 		.sample-2 .flex-container {
-			align-content: flex-end;
+			flex-direction: row-reverse;
 		}
 		.sample-3 .flex-container {
-			align-content: center;
+			flex-direction: column;
 		}
 		.sample-4 .flex-container {
-			align-content: space-between;
-		}
-		.sample-5 .flex-container {
-			align-content: space-around;
-		}
-		.sample-6 .flex-container {
-			align-content: stretch;
-		}
-		.flex-item {
-			flex: 50%;
+			flex-direction: column-reverse;
 		}
 	</style>
 </head>
@@ -41,9 +30,9 @@
 	</header>
 	<main>
 		<article>
-			<h2 class="name">align-content</h2>
+			<h2 class="attribute">flex-direction</h2>
 			<section class="sample-1">
-				<h3 class="value">flex-start</h3 class="value">
+				<h3>flex-start (initial)</h3>
 				<div class="flex-container">
 					<div class="flex-item">flex-item-1</div>
 					<div class="flex-item">flex-item-2</div>
@@ -73,27 +62,7 @@
 				</div>
 			</section>
 			<section class="sample-4">
-				<h3 class="value">space-</h3 class="value">
-				<div class="flex-container">
-					<div class="flex-item">flex-item-1</div>
-					<div class="flex-item">flex-item-2</div>
-					<div class="flex-item">flex-item-3</div>
-					<div class="flex-item">flex-item-4</div>
-					<div class="flex-item">flex-item-5</div>
-				</div>
-			</section>
-			<section class="sample-5">
-				<h3 class="value">baseline</h3 class="value">
-				<div class="flex-container">
-					<div class="flex-item">flex-item-1</div>
-					<div class="flex-item">flex-item-2</div>
-					<div class="flex-item">flex-item-3</div>
-					<div class="flex-item">flex-item-4</div>
-					<div class="flex-item">flex-item-5</div>
-				</div>
-			</section>
-			<section class="sample-6">
-				<h3 class="value">strech</h3 class="value">
+				<h3 class="value">space-between</h3 class="value">
 				<div class="flex-container">
 					<div class="flex-item">flex-item-1</div>
 					<div class="flex-item">flex-item-2</div>

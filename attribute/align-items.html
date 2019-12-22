@@ -4,23 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>flex-direction - flex-container | flex</title>
-	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<title>align-items - flex-container | flex</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<style>
 		.flex-container {
 			display: flex;
 		}
 		.sample-1 .flex-container {
-			flex-direction: row;
+			align-items: auto;
 		}
 		.sample-2 .flex-container {
-			flex-direction: row-reverse;
+			align-items: flex-start;
 		}
 		.sample-3 .flex-container {
-			flex-direction: column;
+			align-items: flex-end;
 		}
 		.sample-4 .flex-container {
-			flex-direction: column-reverse;
+			align-items: center;
+		}
+		.sample-5 .flex-container {
+			align-items: baseline;
+		}
+		.sample-6 .flex-container {
+			align-items: stretch;
+		}
+		.flex-item:nth-child(1) {
+			padding: 10px 0;
+		}
+		.flex-item:nth-child(2) {
+			padding: 10px 0 20px;
+		}
+		.flex-item:nth-child(3) {
+			padding: 20px 0;
+		}
+		.flex-item:nth-child(4) {
+			font-size: 20px;
+		}
+		.flex-item:nth-child(5) {
+			font-size: 30px;
 		}
 	</style>
 </head>
@@ -30,9 +51,9 @@
 	</header>
 	<main>
 		<article>
-			<h2 class="name">flex-direction</h2>
+			<h2 class="attribute">align-items</h2>
 			<section class="sample-1">
-				<h3>flex-start (initial)</h3>
+				<h3 class="value">auto (initial)</h3 class="value">
 				<div class="flex-container">
 					<div class="flex-item">flex-item-1</div>
 					<div class="flex-item">flex-item-2</div>
@@ -42,7 +63,7 @@
 				</div>
 			</section>
 			<section class="sample-2">
-				<h3 class="value">flex-end</h3 class="value">
+				<h3 class="value">flex-start</h3 class="value">
 				<div class="flex-container">
 					<div class="flex-item">flex-item-1</div>
 					<div class="flex-item">flex-item-2</div>
@@ -52,7 +73,7 @@
 				</div>
 			</section>
 			<section class="sample-3">
-				<h3 class="value">center</h3 class="value">
+				<h3 class="value">flex-end</h3 class="value">
 				<div class="flex-container">
 					<div class="flex-item">flex-item-1</div>
 					<div class="flex-item">flex-item-2</div>
@@ -62,7 +83,27 @@
 				</div>
 			</section>
 			<section class="sample-4">
-				<h3 class="value">space-between</h3 class="value">
+				<h3 class="value">center</h3 class="value">
+				<div class="flex-container">
+					<div class="flex-item">flex-item-1</div>
+					<div class="flex-item">flex-item-2</div>
+					<div class="flex-item">flex-item-3</div>
+					<div class="flex-item">flex-item-4</div>
+					<div class="flex-item">flex-item-5</div>
+				</div>
+			</section>
+			<section class="sample-5">
+				<h3 class="value">baseline</h3 class="value">
+				<div class="flex-container">
+					<div class="flex-item">flex-item-1</div>
+					<div class="flex-item">flex-item-2</div>
+					<div class="flex-item">flex-item-3</div>
+					<div class="flex-item">flex-item-4</div>
+					<div class="flex-item">flex-item-5</div>
+				</div>
+			</section>
+			<section class="sample-6">
+				<h3 class="value">strech</h3 class="value">
 				<div class="flex-container">
 					<div class="flex-item">flex-item-1</div>
 					<div class="flex-item">flex-item-2</div>
