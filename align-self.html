@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>align-self - flex-item | flex</title>
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<style>
+		.flex-container {
+			display: flex;
+			height: 50px;
+			align-items: center;
+		}
+		.flex-item {
+			flex: 1;
+		}
+		.flex-item:nth-child(1) {
+			align-self: auto;
+		}
+		.flex-item:nth-child(2) {
+			align-self: flex-start;
+		}
+		.flex-item:nth-child(3) {
+			align-self: flex-end;
+		}
+		.flex-item:nth-child(4) {
+			align-self: center;
+		}
+		.flex-item:nth-child(5) {
+			align-self: baseline;
+		}
+		.flex-item:nth-child(6) {
+			align-self: stretch;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 class="title">flex</h1>
+	</header>
+	<main>
+		<article>
+			<h2 class="name">align-self</h2>
+			<section class="sample-1">
+				<h3 class="value">value</h3 class="value">
+				<div class="flex-container">
+					<div class="flex-item">auto</div>
+					<div class="flex-item">flex-start</div>
+					<div class="flex-item">flex-end</div>
+					<div class="flex-item">center</div>
+					<div class="flex-item">baseline</div>
+					<div class="flex-item">stretch</div>
+				</div>
+			</section>
+		</article>
+	</main>
+</body>
+</html>

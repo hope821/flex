@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>flex-flow - flex-container | flex</title>
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<style>
+		.flex-container {
+			display: flex;
+			height: 70px;
+		}
+		.sample-1 .flex-container {
+			flex-flow: row;
+		}
+		.sample-2 .flex-container {
+			flex-flow: column wrap;
+		}
+		.sample-3 .flex-container {
+			flex-flow: row-reverse wrap-reverse;
+		}
+		.flex-item {
+			flex:0 30%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 class="title">flex</h1>
+	</header>
+	<main>
+		<article>
+			<h2 class="name">flex-flow</h2>
+			<section class="sample-1">
+				<h3 class="value">row</h3 class="value">
+				<div class="flex-container">
+					<div class="flex-item">flex-item-1</div>
+					<div class="flex-item">flex-item-2</div>
+					<div class="flex-item">flex-item-3</div>
+					<div class="flex-item">flex-item-4</div>
+					<div class="flex-item">flex-item-5</div>
+				</div>
+			</section>
+			<section class="sample-2">
+				<h3 class="value">column wrap</h3 class="value">
+				<div class="flex-container">
+					<div class="flex-item">flex-item-1</div>
+					<div class="flex-item">flex-item-2</div>
+					<div class="flex-item">flex-item-3</div>
+					<div class="flex-item">flex-item-4</div>
+					<div class="flex-item">flex-item-5</div>
+				</div>
+			</section>
+			<section class="sample-3">
+				<h3 class="value">row-reverse wrap-reverse</h3 class="value">
+				<div class="flex-container">
+					<div class="flex-item">flex-item-1</div>
+					<div class="flex-item">flex-item-2</div>
+					<div class="flex-item">flex-item-3</div>
+					<div class="flex-item">flex-item-4</div>
+					<div class="flex-item">flex-item-5</div>
+				</div>
+			</section>
+		</article>
+	</main>
+</body>
+</html>
